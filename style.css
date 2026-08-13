@@ -64,16 +64,18 @@ section {
   scroll-margin-top: 190px;
 }
 
-#start {
+#start,
+#about {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 40px;
 }
 
-#start img {
+#start img,
+#about video {
   width: 50%;
-  height: 200px;
+  height: 300px;
   object-fit: cover;
 }
 
