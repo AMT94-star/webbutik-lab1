@@ -91,6 +91,24 @@ section {
   color: white;
 }
 
+.product-list {
+  display: flex;
+  gap: 20px;
+}
+
+.product-card {
+  flex: 1;
+  border: 1px solid lightgray;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.product-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
 footer {
   background-image: url("https://www.pokemoncenter.com/static/images/footer/2026_30th_Footer_Backdrop_Characters_Mobile.png");
   background-size: cover;
