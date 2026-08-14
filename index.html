@@ -157,26 +157,34 @@
 
       <section id="contact">
         <h2>Kontakt</h2>
-        <form>
-          <label for="subject">Ämne</label>
-          <select id="subject" name="subject">
-            <option value="product">Fråga kring produkt</option>
-            <option value="order">Fråga kring beställning</option>
-            <option value="shipping">Fråga kring frakt</option>
-            <option value="other">Övriga frågor</option>
-          </select>
+        <div class="contact-layout">
+          <form>
+            <label for="subject">Ämne</label>
+            <select id="subject" name="subject">
+              <option value="product">Fråga kring produkt</option>
+              <option value="order">Fråga kring beställning</option>
+              <option value="shipping">Fråga kring frakt</option>
+              <option value="other">Övriga frågor</option>
+            </select>
 
-          <label for="namn">Namn</label>
-          <input type="text" id="namn" name="namn" />
+            <label for="namn">Namn</label>
+            <input type="text" id="namn" name="namn" />
 
-          <label for="epost">Epost</label>
-          <input type="email" id="email" name="email" />
+            <label for="epost">Epost</label>
+            <input type="email" id="email" name="email" />
 
-          <label for="message">Meddelande</label>
-          <textarea id="message" name="message"></textarea>
+            <label for="message">Meddelande</label>
+            <textarea id="message" name="message"></textarea>
 
-          <button type="submit">Skicka</button>
-        </form>
+            <button type="submit">Skicka</button>
+          </form>
+
+          <p class="integrity-text">
+            Uppgifterna som du fyller i används enbart för att kunna besvara
+            dina frågor. Läs mer om detta under vår
+            <a href="#integrity">integritetspolicy.</a>
+          </p>
+        </div>
       </section>
 
       <section id="integrity">
