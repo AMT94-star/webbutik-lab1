@@ -146,6 +146,16 @@ textarea {
   resize: vertical;
 }
 
+.contact-layout {
+  display: flex;
+  gap: 50px;
+}
+
+.contact-layout form,
+.integrity-text {
+  flex: 1;
+}
+
 footer {
   background-image: url("https://www.pokemoncenter.com/static/images/footer/2026_30th_Footer_Backdrop_Characters_Mobile.png");
   background-size: cover;
