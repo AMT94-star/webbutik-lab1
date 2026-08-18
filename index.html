@@ -48,7 +48,7 @@
               src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoA9hClF90WTTbbJRAosDbmQztNCFF4DHHl6_GcaCCyMX6Swn-mEMVcRI&s=10"
               alt="Astronaut Pikachu plush"
             />
-            <h4>Astronaut Pikachu plush</h4>
+            <h3>Astronaut Pikachu plush</h3>
             <p>
               En söt astronout Pikachu som du kan ha i din samling! Den är
               perfekt för alla Pikachu-älskare.
@@ -65,7 +65,7 @@
               src="https://img.magnific.com/free-photo/numerology-concept-with-dice_23-2150354498.jpg?semt=ais_test_b&w=740&q=80"
               alt="Två tärningsset för Dungeons and Dragons"
             />
-            <h4>Två Tärningsset för Dungeons and Dragons</h4>
+            <h3>Två Tärningsset för Dungeons and Dragons</h3>
             <p>
               Perfekt för alla Dungeons and Dragons spelare! Inkluderar
               tärningar i olika former och storlekar.
@@ -82,7 +82,7 @@
               src="https://images.pexels.com/photos/11031423/pexels-photo-11031423.png"
               alt="Powerbank"
             />
-            <h4>Powerbank</h4>
+            <h3>Powerbank</h3>
             <p>
               En praktisk powerbank som du kan ha med dig överallt! Den har stor
               kapacitet och snabb laddning.
@@ -99,7 +99,7 @@
               src="https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/25424310/Phone_cooler_timid.jpg?quality=90&strip=all&crop=0,0,100,100"
               alt="Telefonkylare"
             />
-            <h4>Telefonkylare</h4>
+            <h3>Telefonkylare</h3>
             <p>
               En praktisk fläkt för din telefon som du kan ha med dig överallt!
               Den hjälper till att hålla din telefon kall under intensiv
@@ -117,7 +117,7 @@
               src="https://images.pexels.com/photos/17810093/pexels-photo-17810093.jpeg"
               alt="Hörlurar"
             />
-            <h4>Hörlurar</h4>
+            <h3>Hörlurar</h3>
             <p>
               Dessa hörlurar ger dig kristallklar ljudkvalitet och är bekväma
               att bära under långa perioder. De är perfekta för musikälskare och
@@ -151,30 +151,44 @@
             src="https://www.pexels.com/download/video/8058264/"
             type="video/mp4"
           />
-          Din webbläsare stöder inte videon.
+          Din webbläsare stödjer inte videon.
         </video>
       </section>
 
       <section id="contact">
         <h2>Kontakt</h2>
+        <p>Obligatoriska fält markeras med *</p>
         <div class="contact-layout">
           <form>
-            <label for="subject">Ämne</label>
-            <select id="subject" name="subject">
+            <label for="subject">Ämne*</label>
+            <select id="subject" name="subject" required>
+              <option value="">Välj ett ämne</option>
               <option value="product">Fråga kring produkt</option>
               <option value="order">Fråga kring beställning</option>
               <option value="shipping">Fråga kring frakt</option>
               <option value="other">Övriga frågor</option>
             </select>
 
-            <label for="namn">Namn</label>
-            <input type="text" id="namn" name="namn" />
+            <label for="namn">Namn*</label>
+            <input
+              type="text"
+              id="namn"
+              name="namn"
+              autocomplete="name"
+              required
+            />
 
-            <label for="epost">Epost</label>
-            <input type="email" id="email" name="email" />
+            <label for="email">Epost*</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              autocomplete="email"
+              required
+            />
 
-            <label for="message">Meddelande</label>
-            <textarea id="message" name="message"></textarea>
+            <label for="message">Meddelande*</label>
+            <textarea id="message" name="message" required></textarea>
 
             <button type="submit">Skicka</button>
           </form>
@@ -213,17 +227,17 @@
     </main>
 
     <footer>
-      <p>
-        Skicka mejl till
-        <a href="mailto:aslihan.taskin94@gmail.com"
-          >aslihan.taskin94@gmail.com</a
-        >
-        för frågor
-      </p>
-      <a href="#integrity">Integritetspolicy</a>
-
-      <p>&copy; 2026 Aslis Webbutik.</p>
-      <p></p>
+      <div class="footer-info">
+        <p>
+          Skicka mejl till
+          <a href="mailto:aslihan.taskin94@gmail.com"
+            >aslihan.taskin94@gmail.com</a
+          >
+          för frågor
+        </p>
+        <a href="#integrity">Integritetspolicy</a>
+        <p>&copy; 2026 Aslis Webbutik.</p>
+      </div>
     </footer>
   </body>
 </html>
