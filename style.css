@@ -2,13 +2,6 @@
   box-sizing: border-box;
 }
 
-@media screen and (max-width: 420px) {
-  body {
-    background-color: white;
-    color: black;
-  }
-}
-
 html {
   scroll-behavior: smooth;
 }
@@ -51,7 +44,7 @@ nav a:last-child {
 }
 
 .logo img {
-  width: 125px;
+  width: 80px;
   height: auto;
 }
 
@@ -64,8 +57,7 @@ nav a:last-child {
 
 section {
   padding: 20px;
-  margin-top: 20px;
-  scroll-margin-top: 190px;
+  scroll-margin-top: 161px;
 }
 
 #start,
@@ -165,11 +157,61 @@ footer {
 }
 
 footer a {
-  color: black;
+  color: white;
   text-decoration: none;
 }
 
 footer a:hover {
-  color: rgb(68, 61, 198);
+  color: rgb(234, 235, 178);
   text-decoration: underline;
+}
+
+.footer-info {
+  background-color: rgb(50, 105, 152);
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+a:focus,
+button:focus,
+input:focus,
+textarea:focus,
+select:focus {
+  outline: 3px solid rgb(68, 51, 198);
+  outline-offset: 2px;
+}
+
+@media screen and (max-width: 500px) {
+  nav {
+    flex-wrap: wrap;
+  }
+  nav a {
+    padding: 5px;
+    border-right: none;
+    flex-grow: 0;
+  }
+
+  #start,
+  #about {
+    flex-direction: column;
+  }
+
+  #start img,
+  #about video {
+    width: 100%;
+    height: 200px;
+  }
+
+  .product-list {
+    flex-direction: column;
+  }
+
+  .contact-layout {
+    flex-direction: column;
+  }
+
+  section {
+    scroll-margin-top: 120px;
+  }
 }
