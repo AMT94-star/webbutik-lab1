@@ -75,7 +75,11 @@ section {
   scroll-margin-top: 161px;
 }
 
-#start,
+#start {
+  display: block;
+}
+
+.start-top,
 #about {
   display: flex;
   align-items: center;
@@ -83,11 +87,30 @@ section {
   gap: 40px;
 }
 
-#start img,
+.start-image,
 #about video {
   width: 50%;
   height: 300px;
   object-fit: cover;
+}
+
+.featured-products {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.selected-product {
+  width: 33.33%;
+  padding: 10px;
+  border: 1px solid lightgray;
+  position: relative;
+}
+
+.selected-product img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  display: block;
 }
 
 .product-link,
@@ -229,6 +252,9 @@ select:focus {
 }
 
 @media screen and (max-width: 1100px) {
+  .selected-product {
+    width: 50%;
+  }
   nav a {
     padding: 12px 20px;
     text-align: center;
@@ -239,7 +265,10 @@ select:focus {
   }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
+  .selected-product {
+    width: 100%;
+  }
   nav {
     flex-wrap: wrap;
   }
@@ -250,14 +279,14 @@ select:focus {
     flex-grow: 0;
   }
 
-  #start,
+  .start-top,
   #about,
   .product-list,
   .contact-layout {
     flex-direction: column;
   }
 
-  #start img,
+  .start-image,
   #about video {
     width: 100%;
     height: 200px;
