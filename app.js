@@ -1,8 +1,87 @@
 const cartItems = {};
+const productList = document.getElementById("productList");
 const cartItemContainer = document.getElementById("cartItems");
 const buyButtons = document.querySelectorAll(".buy-button");
 const increaseButton = document.querySelectorAll(".increase-quantity");
 const decreaseButton = document.querySelectorAll(".decrease-quantity");
+
+const loadProducts = async () => {
+  try {
+    const response = await fetch("./products.json");
+
+    if (!response.ok) {
+      console.error("Fel från servern: " + response.status);
+    }
+
+    const products = await response.json();
+    renderProducts(products);
+  } catch (error) {
+    console.error("Fel: ", error);
+  }
+};
+
+const renderProducts = (products) => {
+  products.forEach((product) => {
+    console.log("Produkt: ", product);
+
+    const article = document.createElement("article");
+    article.classList.add("product-card");
+
+    const image = document.createElement("img");
+    image.src = product.image;
+    image.alt = product.imageAlt;
+
+    const title = document.createElement("h3");
+    title.textContent = product.name;
+
+    const description = document.createElement("p");
+    description.textContent = product.description;
+
+    const detailsList = document.createElement("ul");
+    product.details.forEach((detail) => {
+      const listInfo = document.createElement("li");
+      listInfo.textContent = detail;
+      detailsList.appendChild(listInfo);
+    });
+
+    const priceContainer = document.createElement("p");
+    priceContainer.classList.add("price-container");
+    priceContainer.textContent = "Pris: ";
+    if (product.oldPrice) {
+      const oldPrice = document.createElement("p");
+      oldPrice.classList.add("old-price");
+      oldPrice.textContent = `${product.oldPrice} kr`;
+
+      priceContainer.appendChild(oldPrice);
+    }
+
+    const price = document.createElement("span");
+    price.textContent = `${product.price} kr`;
+
+    if (product.oldPrice) {
+      price.classList.add("new-price");
+    }
+    priceContainer.appendChild(price);
+
+    article.appendChild(image);
+    article.appendChild(title);
+    article.appendChild(description);
+    article.appendChild(detailsList);
+    article.appendChild(priceContainer);
+
+    if (product.badge) {
+      const badge = document.createElement("span");
+      badge.classList.add("badge");
+      badge.textContent = product.badge;
+
+      article.appendChild(badge);
+    }
+
+    productList.appendChild(article);
+  });
+};
+
+loadProducts();
 
 const updateCart = () => {
   cartItemContainer.innerHTML = "";
