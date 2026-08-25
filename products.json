@@ -1,0 +1,57 @@
+[
+  {
+    "id": 1,
+    "name": "Handgjord keramikvas",
+    "description": "En stilren handgjord vas i keramik med en unik, mjuk form. Den naturliga finishen gör vasen till en fin detalj i hemmet, både med och utan blommor. Varje vas är unik.",
+    "price": 799,
+    "image": "https://images.pexels.com/photos/6739699/pexels-photo-6739699.jpeg",
+    "imageAlt": "Handgjord keramikvas",
+    "badge": "Nyhet",
+    "details": ["Höjd: 40 cm", "Material: Keramik"]
+  },
+
+  {
+    "id": 2,
+    "name": "Matcha set",
+    "description": "Ett stilrent matcha-set i keramik, perfekt för en lugn testund hemma. Setet innehåller en handgjord matchaskål och levereras tillsammans med en traditionell matchavisp samt matcha-te, så att du har allt du behöver för att komma igång.",
+    "price": 299,
+    "oldPrice": 499,
+    "image": "https://images.pexels.com/photos/33726833/pexels-photo-33726833.jpeg",
+    "imageAlt": "Handgjord matcha set med medföljande visp och te",
+    "badge": "Rea",
+    "details": [
+      "Innehåll: Matchaskål, matchavisp och matcha-te",
+      "Material: Keramik och bambu"
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Stort serveringsfat",
+    "description": "Ett stilrent och rymligt serveringsfat i en varm beige nyans. Den enkla, tidlösa designen passar perfekt för allt från sallader och tilltugg till frukt och bakverk, både till vardags och vid festligare tillfällen.",
+    "price": 599,
+    "image": "https://images.pexels.com/photos/6739232/pexels-photo-6739232.jpeg",
+    "imageAlt": "Stort beige serveringsfat",
+    "badge": "",
+    "details": ["Diameter: 50 cm", "Material: Keramik", "Färg: Beige"]
+  },
+  {
+    "id": 4,
+    "name": "Ljusstakar, set",
+    "description": "Ett stilrent set med handgjorda ljusstakar i keramik med mjuka, organiska former. De varma beige tonerna och den glaserade ytan gör dem till en fin detalj på matbordet, i vardagsrummet eller på en hylla.",
+    "price": 349,
+    "image": "https://images.pexels.com/photos/7302806/pexels-photo-7302806.jpeg",
+    "imageAlt": "Två ljusstakar",
+    "badge": "Bästsäljare",
+    "details": ["Antal: 2 stycken", "Material: Glaserad keramik", "Färg: Beige"]
+  },
+  {
+    "id": 5,
+    "name": "Dekorativ tallrik",
+    "description": "En stilren dekorativ tallrik i vit keramik med en mjuk och tidlös design. Perfekt som en dekorativ detalj på ett bord, en hylla eller som en frukosttallrik.",
+    "price": 299,
+    "image": "https://images.pexels.com/photos/7664106/pexels-photo-7664106.jpeg",
+    "imageAlt": "Dekorativ tallrik",
+    "badge": "",
+    "details": ["Diameter: 15 cm", "Material: Glaserad keramik", "Färg: vit"]
+  }
+]

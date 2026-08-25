@@ -148,6 +148,12 @@ form button,
   font-size: 18px;
 }
 
+.price-container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
 .decrease-quantity,
 .increase-quantity,
 .buy-button {
