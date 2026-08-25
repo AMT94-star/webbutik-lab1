@@ -17,6 +17,15 @@
         <a href="#start">
           <img src="images/mooMarket.png" alt="moo markets web-logga" />
         </a>
+
+        <button id="showCart">Varukorg</button>
+      </div>
+
+      <div id="cart" class="cart-hidden">
+        <h2>Varukorg</h2>
+        <div id="cartItems"></div>
+
+        <button id="hideCart">Stäng</button>
       </div>
 
       <nav>
@@ -122,10 +131,15 @@
               <li>Höjd: 40 cm</li>
               <li>Material: Keramik</li>
             </ul>
-
-            <button class="buy-button" data-name="Handgjord keramikvas">
-              Lägg i varukorg
-            </button>
+            <div class="product-interaction">
+              <label
+                >Antal:
+                <input type="number" class="quantity" value="1" min="1" />
+              </label>
+              <button class="buy-button" data-name="Handgjord keramikvas">
+                Lägg i varukorg
+              </button>
+            </div>
           </article>
 
           <article class="product-card">
@@ -151,9 +165,15 @@
               <li>Material: Keramik och bambu</li>
             </ul>
 
-            <button class="buy-button" data-name="Matcha set">
-              Lägg i varukorg
-            </button>
+            <div class="product-interaction">
+              <label
+                >Antal:
+                <input type="number" class="quantity" value="1" min="1" />
+              </label>
+              <button class="buy-button" data-name="Matcha set">
+                Lägg i varukorg
+              </button>
+            </div>
           </article>
 
           <article class="product-card">
@@ -175,9 +195,15 @@
               <li>Färg: Beige</li>
             </ul>
 
-            <button class="buy-button" data-name="Stort serveringsfat">
-              Lägg i varukorg
-            </button>
+            <div class="product-interaction">
+              <label
+                >Antal:
+                <input type="number" class="quantity" value="1" min="1" />
+              </label>
+              <button class="buy-button" data-name="Stort serveringsfat">
+                Lägg i varukorg
+              </button>
+            </div>
           </article>
 
           <article class="product-card">
@@ -200,9 +226,15 @@
               <li>Färg: Beige</li>
             </ul>
 
-            <button class="buy-button" data-name="Ljusstakar, set">
-              Lägg i varukorg
-            </button>
+            <div class="product-interaction">
+              <label
+                >Antal:
+                <input type="number" class="quantity" value="1" min="1" />
+              </label>
+              <button class="buy-button" data-name="Ljusstakar, set">
+                Lägg i varukorg
+              </button>
+            </div>
           </article>
 
           <article class="product-card">
@@ -223,9 +255,15 @@
               <li>Färg: vit</li>
             </ul>
 
-            <button class="buy-button" data-name="Dekorativ tallrik">
-              Lägg i varukorg
-            </button>
+            <div class="product-interaction">
+              <label
+                >Antal:
+                <input type="number" class="quantity" value="1" min="1" />
+              </label>
+              <button class="buy-button" data-name="Dekorativ tallrik">
+                Lägg i varukorg
+              </button>
+            </div>
           </article>
         </div>
       </section>

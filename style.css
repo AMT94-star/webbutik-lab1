@@ -57,6 +57,7 @@ nav a:last-child {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 
 .logo img {
@@ -110,17 +111,39 @@ section {
 }
 
 .product-link,
-form button {
+form button,
+.buy-button,
+#showCart,
+#hideCart {
   display: inline-block;
   background-color: #1f5e5b;
   color: white;
   text-decoration: none;
   border-radius: 5px;
+  border: none;
   padding: 10px 15px;
 }
 
+.product-interaction {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.quantity {
+  width: 50px;
+}
+
+.quantity,
+.buy-button {
+  height: 50px;
+}
+
 .product-link:hover,
-form button:hover {
+form button:hover,
+.buy-button:hover,
+#showCart:hover,
+#hideCart:hover {
   background-color: #0d2d2c;
   color: white;
 }
@@ -242,6 +265,38 @@ textarea:focus,
 select:focus {
   outline: 3px solid rgb(68, 51, 198);
   outline-offset: 2px;
+}
+
+.cart-hidden {
+  display: none;
+}
+
+#showCart {
+  position: absolute;
+  right: 20px;
+  bottom: 10px;
+}
+
+#hideCart {
+  display: block;
+}
+
+#cart {
+  position: fixed;
+  top: 20px;
+  right: 15px;
+  width: 300px;
+  background-color: whitesmoke;
+  border: 1px solid #9aa6b2;
+  border-radius: 10px;
+  padding: 20px;
+  z-index: 20;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+#cart h2 {
+  margin-top: 0;
+  color: black;
 }
 
 @media screen and (max-width: 1100px) {
