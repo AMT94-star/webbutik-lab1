@@ -127,16 +127,40 @@ form button,
 .product-interaction {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 8px;
+  margin-bottom: 10px;
 }
 
 .quantity {
   width: 50px;
+  height: 35px;
+  text-align: center;
+  padding: 5px;
 }
 
-.quantity,
+.product-card .buy-button {
+  width: 45px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  font-size: 18px;
+}
+
+.decrease-quantity,
+.increase-quantity,
 .buy-button {
-  height: 50px;
+  height: 35px;
+  border: none;
+  border-radius: 5px;
+  background-color: #1f5e5b;
+  color: white;
+}
+
+.decrease-quantity,
+.increase-quantity {
+  width: 35px;
 }
 
 .product-link:hover,
