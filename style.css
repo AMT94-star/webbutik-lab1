@@ -355,7 +355,7 @@ select:focus {
   color: black;
 }
 
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1050px) {
   .selected-product {
     width: 50%;
   }
