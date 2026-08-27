@@ -64,17 +64,25 @@ const renderProducts = (products) => {
 
     const buyButton = document.createElement("button");
     buyButton.classList.add("buy-button");
-    buyButton.textContent = "🛒";
     buyButton.type = "button";
     buyButton.dataset.name = product.name;
+
+    const cartIcon = document.createElement("img");
+    cartIcon.src = "images/shoppingkasse.png";
+    cartIcon.alt = "Lägg i varukorg";
+    buyButton.appendChild(cartIcon);
+
     buyButton.addEventListener("click", () => {
       const amount = Number(quantityInput.value);
       const name = product.name;
 
       if (cartItems[name]) {
-        cartItems[name] += amount;
+        cartItems[name].amount += amount;
       } else {
-        cartItems[name] = amount;
+        cartItems[name] = {
+          amount: amount,
+          price: product.price,
+        };
       }
 
       updateCart();
@@ -175,9 +183,12 @@ const renderFeaturedProducts = (featured) => {
       const name = product.name;
 
       if (cartItems[name]) {
-        cartItems[name] += 1;
+        cartItems[name].amount += 1;
       } else {
-        cartItems[name] = 1;
+        cartItems[name] = {
+          amount: 1,
+          price: product.price,
+        };
       }
 
       updateCart();
@@ -211,15 +222,23 @@ const updateCart = () => {
     return;
   }
 
+  let totalPrice = 0;
+
   for (const name in cartItems) {
-    const amount = cartItems[name];
+    const cartProduct = cartItems[name];
+    const itemTotal = cartProduct.amount * cartProduct.price;
+    totalPrice += itemTotal;
 
     //skapar en ny p-tagg
     const item = document.createElement("p");
-    item.textContent = `${name}: ${amount} st`;
+    item.textContent = `${name}: ${cartProduct.amount} x =  ${itemTotal} kr`;
 
     cartItemContainer.appendChild(item);
   }
+
+  const total = document.createElement("p");
+  total.textContent = `Totalt: ${totalPrice} kr`;
+  cartItemContainer.appendChild(total);
 };
 
 updateCart();

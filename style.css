@@ -227,6 +227,13 @@ form button:hover,
   object-fit: cover;
 }
 
+.product-card .buy-button img {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+  display: block;
+}
+
 form {
   display: flex;
   flex-direction: column;
@@ -305,6 +312,16 @@ select:focus {
   position: absolute;
   right: 20px;
   bottom: 10px;
+
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+#showCart img {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
 }
 
 #hideCart {
