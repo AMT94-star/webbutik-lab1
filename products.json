@@ -7,7 +7,8 @@
     "image": "https://images.pexels.com/photos/6739699/pexels-photo-6739699.jpeg",
     "imageAlt": "Handgjord keramikvas",
     "badge": "Nyhet",
-    "details": ["Höjd: 40 cm", "Material: Keramik"]
+    "details": ["Höjd: 40 cm", "Material: Keramik"],
+    "featured": true
   },
 
   {
@@ -22,7 +23,8 @@
     "details": [
       "Innehåll: Matchaskål, matchavisp och matcha-te",
       "Material: Keramik och bambu"
-    ]
+    ],
+    "featured": true
   },
   {
     "id": 3,
@@ -32,7 +34,8 @@
     "image": "https://images.pexels.com/photos/6739232/pexels-photo-6739232.jpeg",
     "imageAlt": "Stort beige serveringsfat",
     "badge": "",
-    "details": ["Diameter: 50 cm", "Material: Keramik", "Färg: Beige"]
+    "details": ["Diameter: 50 cm", "Material: Keramik", "Färg: Beige"],
+    "featured": false
   },
   {
     "id": 4,
@@ -42,7 +45,12 @@
     "image": "https://images.pexels.com/photos/7302806/pexels-photo-7302806.jpeg",
     "imageAlt": "Två ljusstakar",
     "badge": "Bästsäljare",
-    "details": ["Antal: 2 stycken", "Material: Glaserad keramik", "Färg: Beige"]
+    "details": [
+      "Antal: 2 stycken",
+      "Material: Glaserad keramik",
+      "Färg: Beige"
+    ],
+    "featured": true
   },
   {
     "id": 5,
@@ -52,6 +60,7 @@
     "image": "https://images.pexels.com/photos/7664106/pexels-photo-7664106.jpeg",
     "imageAlt": "Dekorativ tallrik",
     "badge": "",
-    "details": ["Diameter: 15 cm", "Material: Glaserad keramik", "Färg: vit"]
+    "details": ["Diameter: 15 cm", "Material: Glaserad keramik", "Färg: vit"],
+    "featured": false
   }
 ]
