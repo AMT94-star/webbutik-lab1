@@ -28,6 +28,15 @@ header {
   padding: 0px;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+}
+
 nav {
   display: flex;
   justify-content: space-between;
